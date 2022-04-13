@@ -1,0 +1,279 @@
+<object-stream>
+  <Utilities.CustomList>
+    <size>7</size>
+    <head>
+      <next>
+        <next>
+          <next>
+            <next>
+              <next>
+                <next>
+                  <next>
+                    <data class="model.AuctionLot">
+                      <name>Garden Gnome</name>
+                      <description>What is up Drama Alert Nation? I&apos;m your host killer keemstar, let&apos;s get right into the news!</description>
+                      <type>Furniture</type>
+                      <dateOfOrigin>2009-12-02</dateOfOrigin>
+                      <startingPrice>50.0</startingPrice>
+                      <imageURL>https://img.wattpad.com/cover/146528107-256-k823085.jpg</imageURL>
+                      <bids>
+                        <size>0</size>
+                      </bids>
+                    </data>
+                  </next>
+                  <data class="model.AuctionLot">
+                    <name>ReZero Chapter 2 Manga</name>
+                    <description>Best Manga</description>
+                    <type>Books &amp; Ephemera</type>
+                    <dateOfOrigin>2022-01-12</dateOfOrigin>
+                    <startingPrice>40.0</startingPrice>
+                    <imageURL>https://i0.wp.com/simplybinge.com/wp-content/uploads/2017/06/ReZero-Review1.jpg?resize=585%2C691&amp;ssl=1</imageURL>
+                    <bids>
+                      <size>0</size>
+                    </bids>
+                  </data>
+                </next>
+                <data class="model.SoldAuctionLot">
+                  <name>Gold Chain</name>
+                  <description>400 karat gold chain</description>
+                  <type>Jewelery</type>
+                  <dateOfOrigin>2022-01-04</dateOfOrigin>
+                  <startingPrice>1000.0</startingPrice>
+                  <imageURL>https://m.media-amazon.com/images/I/61YbersTnYL._AC_SX425_.jpg</imageURL>
+                  <bids>
+                    <size>3</size>
+                    <head>
+                      <next>
+                        <next>
+                          <next>
+                            <data class="model.WinningBid">
+                              <bidder>
+                                <name>Dylan Sprouse</name>
+                                <address>Tralee</address>
+                                <phone>DylanSprouse@hotmail.com</phone>
+                                <email>1890882041</email>
+                              </bidder>
+                              <auctionLot>
+                                <name>Gold Chain</name>
+                                <description>400 karat gold chain</description>
+                                <type>Jewelery</type>
+                                <dateOfOrigin>2022-01-04</dateOfOrigin>
+                                <startingPrice>1000.0</startingPrice>
+                                <imageURL>https://m.media-amazon.com/images/I/61YbersTnYL._AC_SX425_.jpg</imageURL>
+                                <bids>
+                                  <size>3</size>
+                                  <head>
+                                    <next>
+                                      <next>
+                                        <next>
+                                          <data class="model.WinningBid" reference="../../../../../../.."/>
+                                        </next>
+                                        <data class="model.Bid">
+                                          <bidder>
+                                            <name>Gedvydas Jucius</name>
+                                            <address>Dungarvan</address>
+                                            <phone>1234567890</phone>
+                                            <email>gedisfine@42069.c</email>
+                                          </bidder>
+                                          <auctionLot reference="../../../../../.."/>
+                                          <amount>1200.0</amount>
+                                          <dateTime>2022-01-03T12:59:20.735879</dateTime>
+                                        </data>
+                                      </next>
+                                      <data class="model.Bid">
+                                        <bidder>
+                                          <name>Darren Sills</name>
+                                          <address>Wexford</address>
+                                          <phone>1234567890</phone>
+                                          <email>DarrSills@gmail.com</email>
+                                        </bidder>
+                                        <auctionLot reference="../../../../.."/>
+                                        <amount>1001.0</amount>
+                                        <dateTime>2022-01-03T12:59:12.7585218</dateTime>
+                                      </data>
+                                    </next>
+                                    <data class="model.Bid" reference="../next/data"/>
+                                  </head>
+                                </bids>
+                              </auctionLot>
+                              <amount>1400.0</amount>
+                              <dateTime>2022-01-03T12:59:29.8442072</dateTime>
+                            </data>
+                          </next>
+                          <data class="model.Bid" reference="../next/data/auctionLot/bids/head/next/next/data"/>
+                        </next>
+                        <data class="model.Bid" reference="../next/next/data/auctionLot/bids/head/next/data"/>
+                      </next>
+                      <data class="model.Bid" reference="../next/next/next/data/auctionLot/bids/head/next/data"/>
+                    </head>
+                  </bids>
+                  <dateOfSale>2022-01-03T12:59:33.7365526</dateOfSale>
+                  <finalPrice>1400.0</finalPrice>
+                </data>
+              </next>
+              <data class="model.SoldAuctionLot">
+                <name>PS5</name>
+                <description>Basically None Existant</description>
+                <type>Fine Arts</type>
+                <dateOfOrigin>2021-11-01</dateOfOrigin>
+                <startingPrice>69.69</startingPrice>
+                <imageURL>https://cdn.pocket-lint.com/r/s/970x/assets/images/154419-games-review-hands-on-playstation-5-hands-on-pics-image1-tbq3hzlrkw.jpg</imageURL>
+                <bids>
+                  <size>1</size>
+                  <head>
+                    <next>
+                      <data class="model.WinningBid">
+                        <bidder>
+                          <name>Darren Sills</name>
+                          <address>Wexford</address>
+                          <phone>1234567890</phone>
+                          <email>DarrSills@gmail.com</email>
+                        </bidder>
+                        <auctionLot>
+                          <name>PS5</name>
+                          <description>Basically None Existant</description>
+                          <type>Fine Arts</type>
+                          <dateOfOrigin>2021-11-01</dateOfOrigin>
+                          <startingPrice>69.69</startingPrice>
+                          <imageURL>https://cdn.pocket-lint.com/r/s/970x/assets/images/154419-games-review-hands-on-playstation-5-hands-on-pics-image1-tbq3hzlrkw.jpg</imageURL>
+                          <bids>
+                            <size>1</size>
+                            <head>
+                              <next>
+                                <data class="model.WinningBid" reference="../../../../.."/>
+                              </next>
+                              <data class="model.Bid">
+                                <bidder>
+                                  <name>Darren Sills</name>
+                                  <address>Wexford</address>
+                                  <phone>1234567890</phone>
+                                  <email>DarrSills@gmail.com</email>
+                                </bidder>
+                                <auctionLot reference="../../../.."/>
+                                <amount>72.0</amount>
+                                <dateTime>2021-11-17T20:59:59.7126371</dateTime>
+                              </data>
+                            </head>
+                          </bids>
+                        </auctionLot>
+                        <amount>444.0</amount>
+                        <dateTime>2021-11-21T19:05:18.8403894</dateTime>
+                      </data>
+                    </next>
+                    <data class="model.WinningBid" reference="../next/data"/>
+                  </head>
+                </bids>
+                <dateOfSale>2021-11-21T19:05:21.2943629</dateOfSale>
+                <finalPrice>444.0</finalPrice>
+              </data>
+            </next>
+            <data class="model.AuctionLot">
+              <name>Pot of Greed</name>
+              <description>What does it do?</description>
+              <type>Books &amp; Ephemera</type>
+              <dateOfOrigin>2002-07-10</dateOfOrigin>
+              <startingPrice>0.02</startingPrice>
+              <imageURL>https://static.wikia.nocookie.net/yugioh/images/f/f2/PotofGreed-YGLD-EN-C-1E.png/revision/latest?cb=20170814021753</imageURL>
+              <bids>
+                <size>0</size>
+                <head>
+                  <data class="model.Bid">
+                    <bidder reference="../../../../../next/data/bids/head/next/data/auctionLot/bids/head/data/bidder"/>
+                    <auctionLot reference="../../../.."/>
+                    <amount>3.0</amount>
+                    <dateTime>2021-11-17T20:59:30.9054617</dateTime>
+                  </data>
+                </head>
+              </bids>
+            </data>
+          </next>
+          <data class="model.AuctionLot">
+            <name>Miia Dakimakura</name>
+            <description>Long.</description>
+            <type>Fine Arts</type>
+            <dateOfOrigin>2021-11-03</dateOfOrigin>
+            <startingPrice>69.69</startingPrice>
+            <imageURL>https://i.ebayimg.com/images/g/HWgAAOSwhkRWgh2S/s-l300.jpg</imageURL>
+            <bids>
+              <size>1</size>
+              <head>
+                <next>
+                  <data class="model.Bid">
+                    <bidder>
+                      <name>Darren Sills</name>
+                      <address>Wexford</address>
+                      <phone>1234567890</phone>
+                      <email>DarrSills@gmail.com</email>
+                    </bidder>
+                    <auctionLot reference="../../../../.."/>
+                    <amount>88.0</amount>
+                    <dateTime>2021-11-21T23:46:45.7813896</dateTime>
+                  </data>
+                </next>
+                <data class="model.Bid" reference="../next/data"/>
+              </head>
+            </bids>
+          </data>
+        </next>
+        <data class="model.AuctionLot">
+          <name>GameBoy</name>
+          <description>Who?</description>
+          <type>Fine Arts</type>
+          <dateOfOrigin>2021-11-12</dateOfOrigin>
+          <startingPrice>69.69</startingPrice>
+          <imageURL>https://media.wired.com/photos/5edffd68af3d0a069fd1d4e7/1:1/w_1595,h_1595,c_limit/Gear-Gameboy-Hack-DSC01030.jpg</imageURL>
+          <bids>
+            <size>0</size>
+          </bids>
+        </data>
+      </next>
+      <data class="model.AuctionLot" reference="../next/next/next/next/data/bids/head/next/data/auctionLot"/>
+    </head>
+  </Utilities.CustomList>
+  <Utilities.CustomList>
+    <size>5</size>
+    <head>
+      <next>
+        <next>
+          <next>
+            <next>
+              <next>
+                <data class="model.Bidder">
+                  <name>Yi Long Musk</name>
+                  <address>Taiwan</address>
+                  <phone>YiLongMusk@ccp.jp</phone>
+                  <email>4209642042</email>
+                </data>
+              </next>
+              <data class="model.Bidder">
+                <name>Declan Daniels</name>
+                <address>Waterford</address>
+                <phone>declan@gmail.com</phone>
+                <email>0183655379</email>
+              </data>
+            </next>
+            <data class="model.Bidder">
+              <name>Dylan Sprouse</name>
+              <address>Tralee</address>
+              <phone>DylanSprouse@hotmail.com</phone>
+              <email>1890882041</email>
+            </data>
+          </next>
+          <data class="model.Bidder">
+            <name>Gedvydas Jucius</name>
+            <address>Dungarvan</address>
+            <phone>1234567890</phone>
+            <email>gedisfine@42069.c</email>
+          </data>
+        </next>
+        <data class="model.Bidder">
+          <name>Darren Sills</name>
+          <address>Wexford</address>
+          <phone>1234567890</phone>
+          <email>DarrSills@gmail.com</email>
+        </data>
+      </next>
+      <data class="model.Bidder" reference="../next/data"/>
+    </head>
+  </Utilities.CustomList>
+</object-stream>

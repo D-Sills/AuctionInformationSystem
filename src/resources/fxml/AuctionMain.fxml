@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="561.0" prefWidth="969.0" style="-fx-background-color: #f8f7f2;" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AuctionMainController">
+   <children>
+      <BorderPane prefHeight="561.0" prefWidth="1000.0">
+         <left>
+            <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="177.0" prefWidth="275.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="83.0" prefWidth="275.0">
+                     <children>
+                        <Label prefHeight="74.0" prefWidth="276.0" text="Auction House" textFill="#4c4a4a">
+                           <font>
+                              <Font name="Calibri Bold" size="28.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="56.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/auctioneer.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="75.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="81.0" prefWidth="275.0">
+                     <children>
+                        <GridPane prefHeight="50.0" prefWidth="209.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label prefHeight="35.0" prefWidth="166.0" text="Max Price">
+                                 <font>
+                                    <Font name="Calibri" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Slider fx:id="priceSlider" max="1000.0" onMouseReleased="#onSliderDone" prefHeight="14.0" prefWidth="209.0" GridPane.rowIndex="1" />
+                              <Label fx:id="maxPrice" alignment="TOP_CENTER" prefHeight="37.0" prefWidth="210.0" text="€0" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="Calibri Light" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </GridPane>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="223.0" prefWidth="275.0">
+                     <children>
+                        <Accordion focusTraversable="false" prefHeight="187.0" prefWidth="262.0">
+                          <panes>
+                            <TitledPane animated="false" prefHeight="183.0" prefWidth="242.0" text="Filter Type">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="169.0" prefWidth="273.0" style="-fx-background-color: #f8f7f2;">
+                                       <children>
+                                          <VBox prefHeight="133.0" prefWidth="243.0">
+                                             <children>
+                                                <RadioButton fx:id="radioButton8" mnemonicParsing="false" prefHeight="19.0" prefWidth="96.0" text="No Filter">
+                                                   <padding>
+                                                      <Insets bottom="3.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Calibri" size="12.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton fx:id="radioButton1" mnemonicParsing="false" text="Fine Arts">
+                                                   <VBox.margin>
+                                                      <Insets top="5.0" />
+                                                   </VBox.margin>
+                                                   <padding>
+                                                      <Insets bottom="3.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Calibri" size="12.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton fx:id="radioButton2" mnemonicParsing="false" text="Furniture">
+                                                   <padding>
+                                                      <Insets bottom="3.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Calibri" size="12.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton fx:id="radioButton3" mnemonicParsing="false" text="Books &amp; Ephemera">
+                                                   <padding>
+                                                      <Insets bottom="3.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Calibri" size="12.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton fx:id="radioButton4" mnemonicParsing="false" text="Currency &amp; Coins">
+                                                   <padding>
+                                                      <Insets bottom="3.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Calibri" size="12.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton fx:id="radioButton5" mnemonicParsing="false" text="Jewelery">
+                                                   <font>
+                                                      <Font name="Calibri" size="12.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                   <padding>
+                                                      <Insets bottom="3.0" />
+                                                   </padding>
+                                                </RadioButton>
+                                                <RadioButton fx:id="radioButton6" layoutX="10.0" layoutY="93.0" mnemonicParsing="false" text="Memorabilia">
+                                                   <font>
+                                                      <Font name="Calibri" size="12.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets bottom="3.0" />
+                                                   </padding>
+                                                </RadioButton>
+                                                <RadioButton fx:id="radioButton7" layoutX="10.0" layoutY="112.0" mnemonicParsing="false" text="Games &amp; Toys">
+                                                   <font>
+                                                      <Font name="Calibri" size="12.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets bottom="3.0" />
+                                                   </padding>
+                                                </RadioButton>
+                                             </children>
+                                             <padding>
+                                                <Insets left="13.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children></AnchorPane>
+                              </content>
+                                 <font>
+                                    <Font name="Calibri" size="16.0" />
+                                 </font>
+                            </TitledPane>
+                          </panes>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Accordion>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="669.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="38.0" prefWidth="667.0">
+                     <children>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="37.0" prefWidth="497.0" style="-fx-border-color: black;">
+                           <children>
+                              <TextField fx:id="searchTextField" prefHeight="35.0" prefWidth="333.0" promptText="Search..." style="-fx-background-color: white;">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </TextField>
+                              <Separator maxWidth="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="35.0" prefWidth="0.0" />
+                              <ComboBox fx:id="searchComboBox" prefHeight="34.0" prefWidth="181.0" style="-fx-background-color: white; -fx-border-color: none;" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </HBox>
+                        <Button fx:id="earchButton" alignment="BASELINE_LEFT" maxHeight="-Infinity" mnemonicParsing="false" onAction="#onActionSearch" prefHeight="38.0" prefWidth="155.0" style="-fx-background-color: #63b7b7;" text="Search" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Search.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <HBox.margin>
+                              <Insets left="16.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="669.0" style="-fx-border-color: D8D8D4; -fx-background-color: white;">
+                     <children>
+                        <ListView fx:id="auctionListView" fixedCellSize="117.0" focusTraversable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="350.0" prefWidth="645.0">
+                           <VBox.margin>
+                              <Insets left="10.0" top="12.0" />
+                           </VBox.margin>
+                        </ListView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets right="43.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+         <top>
+            <Pane prefHeight="43.0" prefWidth="993.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane layoutX="584.0" layoutY="11.0" prefHeight="22.0" prefWidth="367.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="biddersButton" alignment="BASELINE_LEFT" maxHeight="-Infinity" mnemonicParsing="false" onAction="#onActionBidders" prefHeight="0.0" prefWidth="176.0" style="-fx-background-color: white;" text="Manage Bidders" textFill="#4c4a4a" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Bidder.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="addAuctionButton" alignment="BASELINE_LEFT" maxHeight="-Infinity" mnemonicParsing="false" onAction="#onActionAddAuction" prefHeight="38.0" prefWidth="174.0" style="-fx-background-color: white;" text="Add Auction Lot" textFill="#4c4a4a" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/AuctionLot.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </GridPane>
+                  <Separator layoutY="35.0" prefHeight="17.0" prefWidth="1000.0" />
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane prefHeight="64.0" prefWidth="1152.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Separator layoutX="-1.0" layoutY="-4.0" prefHeight="5.0" prefWidth="1000.0" />
+                  <GridPane layoutX="511.0" layoutY="3.0" prefHeight="60.0" prefWidth="475.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="saveButton" alignment="BASELINE_LEFT" maxHeight="-Infinity" mnemonicParsing="false" onAction="#onActionSave" prefHeight="30.0" prefWidth="124.0" style="-fx-background-color: #A9D099;" text="Save" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/save.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="loadButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#onActionLoad" prefHeight="27.0" prefWidth="124.0" style="-fx-background-color: #A5D6F7;" text="Load" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/load.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="resetButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#onActionReset" prefHeight="29.0" prefWidth="124.0" style="-fx-background-color: #ff6961;" text="Reset" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/quit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Calibri" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </GridPane>
+                  <Label layoutX="54.0" layoutY="16.0" prefHeight="33.0" prefWidth="371.0" text="Created by Darren Sills &amp; Gedvydas Jucius" textFill="#4c4a4a">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

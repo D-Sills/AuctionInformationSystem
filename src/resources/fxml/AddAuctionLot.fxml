@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="347.0" style="-fx-background-color: #f8f7f2;" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddAuctionController">
+   <children>
+      <Pane layoutX="19.0" layoutY="16.0" prefHeight="400.0" prefWidth="309.0" style="-fx-border-color: D8D8D4;">
+         <children>
+            <VBox prefHeight="400.0" prefWidth="300.0">
+               <children>
+                  <HBox prefHeight="203.0" prefWidth="300.0">
+                     <children>
+                        <GridPane prefHeight="163.0" prefWidth="300.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.99991861979166" minWidth="10.0" prefWidth="185.33329264322916" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.3333740234375" minWidth="10.0" prefWidth="115.33337402343747" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <GridPane prefHeight="138.0" prefWidth="193.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="82.0" prefWidth="166.0">
+                                       <children>
+                                          <GridPane prefHeight="82.0" prefWidth="176.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.666748046875" minWidth="10.0" prefWidth="167.666748046875" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label alignment="BOTTOM_LEFT" prefHeight="35.0" prefWidth="166.0" text="Title">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <TextField fx:id="titleTextField" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </GridPane.margin>
+                                                </TextField>
+                                             </children>
+                                          </GridPane>
+                                       </children>
+                                    </HBox>
+                                    <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="65.0" prefWidth="169.0" GridPane.rowIndex="1">
+                                       <children>
+                                          <GridPane prefHeight="65.0" prefWidth="167.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label alignment="BOTTOM_LEFT" prefHeight="35.0" prefWidth="166.0" text="Date of Origin">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <DatePicker fx:id="datePicker" editable="false" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </GridPane.margin>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </DatePicker>
+                                             </children>
+                                          </GridPane>
+                                       </children>
+                                    </HBox>
+                                    <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="65.0" prefWidth="169.0" GridPane.rowIndex="2">
+                                       <children>
+                                          <GridPane prefHeight="65.0" prefWidth="167.0">
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                             <children>
+                                                <Label alignment="BOTTOM_LEFT" prefHeight="35.0" prefWidth="166.0" text="Starting Price">
+                                                   <font>
+                                                      <Font name="Calibri" size="16.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Spinner fx:id="priceSpinner" editable="true" prefHeight="25.0" prefWidth="163.0" GridPane.rowIndex="1">
+                                                   <GridPane.margin>
+                                                      <Insets left="10.0" />
+                                                   </GridPane.margin>
+                                                   <valueFactory>
+                                                      <SpinnerValueFactory.DoubleSpinnerValueFactory max="10000.00" min="1.00" />
+                                                   </valueFactory>
+                                                </Spinner>
+                                             </children>
+                                          </GridPane>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </GridPane>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <GridPane prefHeight="211.0" prefWidth="115.0">
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="117.99997965494792" minHeight="8.66666952768962" prefHeight="20.666668574015304" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="161.33333047231037" minHeight="10.0" prefHeight="149.33333142598468" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                       <children>
+                                          <Label alignment="BOTTOM_LEFT" prefHeight="35.0" prefWidth="166.0" text="Type">
+                                             <font>
+                                                <Font name="Calibri" size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                                             <children>
+                                                <RadioButton fx:id="radioButton1" mnemonicParsing="false" text="Fine Arts">
+                                                   <VBox.margin>
+                                                      <Insets top="5.0" />
+                                                   </VBox.margin>
+                                                   <padding>
+                                                      <Insets bottom="3.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Calibri" size="12.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton fx:id="radioButton2" mnemonicParsing="false" text="Furniture">
+                                                   <padding>
+                                                      <Insets bottom="3.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Calibri" size="12.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton fx:id="radioButton3" mnemonicParsing="false" text="Books &amp; Ephemera">
+                                                   <padding>
+                                                      <Insets bottom="3.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Calibri" size="12.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton fx:id="radioButton4" mnemonicParsing="false" text="Currency &amp; Coins">
+                                                   <padding>
+                                                      <Insets bottom="3.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font name="Calibri" size="12.0" />
+                                                   </font>
+                                                </RadioButton>
+                                                <RadioButton fx:id="radioButton5" mnemonicParsing="false" text="Jewelery">
+                                                   <font>
+                                                      <Font name="Calibri" size="12.0" />
+                                                   </font>
+                                                   <VBox.margin>
+                                                      <Insets />
+                                                   </VBox.margin>
+                                                   <padding>
+                                                      <Insets bottom="3.0" />
+                                                   </padding>
+                                                </RadioButton>
+                                                <RadioButton fx:id="radioButton6" layoutX="10.0" layoutY="93.0" mnemonicParsing="false" text="Memorabilia">
+                                                   <font>
+                                                      <Font name="Calibri" size="12.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets bottom="3.0" />
+                                                   </padding>
+                                                </RadioButton>
+                                                <RadioButton fx:id="radioButton7" layoutX="10.0" layoutY="112.0" mnemonicParsing="false" text="Games &amp; Toys">
+                                                   <font>
+                                                      <Font name="Calibri" size="12.0" />
+                                                   </font>
+                                                   <padding>
+                                                      <Insets bottom="3.0" />
+                                                   </padding>
+                                                </RadioButton>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="119.0" prefWidth="328.0">
+                     <children>
+                        <GridPane prefHeight="106.0" prefWidth="322.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="55.33331298828125" minHeight="10.0" prefHeight="35.66664822896321" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="94.66668891906738" minHeight="10.0" prefHeight="83.00001843770345" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="BOTTOM_LEFT" prefHeight="35.0" prefWidth="166.0" text="Description">
+                                 <font>
+                                    <Font name="Calibri" size="16.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <TextArea fx:id="descriptionTextArea" prefHeight="77.0" prefWidth="293.0" wrapText="true" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="65.0" prefWidth="291.0">
+                     <children>
+                        <GridPane prefHeight="52.0" prefWidth="320.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label alignment="BOTTOM_LEFT" prefHeight="35.0" prefWidth="166.0" text="Image URL">
+                                 <font>
+                                    <Font name="Calibri" size="16.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <TextField fx:id="URLTextfield" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="289.0" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </HBox>
+                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="65.0" prefWidth="291.0">
+                     <children>
+                        <GridPane prefHeight="65.0" prefWidth="344.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Button fx:id="addButton" mnemonicParsing="false" onAction="#onActionAdd" prefHeight="37.0" prefWidth="111.0" style="-fx-background-color: #A9D099;" text="Add" textFill="WHITE">
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                                 <font>
+                                    <Font name="Calibri" size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

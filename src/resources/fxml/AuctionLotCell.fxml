@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<fx:root type="javafx.scene.control.ListCell" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+    <graphic>
+        <VBox prefHeight="117.0" prefWidth="581.0" style="-fx-border-color: #D8D8D4 transparent #D8D8D4 transparent; -fx-background-color: #f8f7f2;" >
+            <children>
+                <GridPane prefHeight="139.0" prefWidth="643.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="315.0" minWidth="10.0" prefWidth="119.00000508626303" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="474.9999694824219" minWidth="10.0" prefWidth="460.3333282470703" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="104.0" prefWidth="104.0" style="-fx-border-color: D8D8D4;">
+                            <children>
+                                <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="104.0" prefWidth="103.0">
+                                    <children>
+                                        <StackPane prefHeight="150.0" prefWidth="200.0">
+                                            <children>
+                                                <ImageView fx:id="lotImage" fitHeight="102.0" fitWidth="102.0" pickOnBounds="true" />
+                                                <Label fx:id="statusLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="22.0" prefWidth="55.0" >
+                                                    <font>
+                                                        <Font name="Calibri Bold" size="11.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets left="3.0" />
+                                                    </padding>
+                                                    <StackPane.margin>
+                                                        <Insets bottom="65.0" right="45.0" />
+                                                    </StackPane.margin>
+                                                </Label>
+                                            </children>
+                                        </StackPane>
+                                    </children>
+                                </HBox>
+                            </children>
+
+                        </HBox>
+                        <GridPane prefHeight="117.0" prefWidth="390.0" GridPane.columnIndex="1">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.666748046875" minWidth="10.0" prefWidth="230.3333740234375" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.3333740234375" minWidth="10.0" prefWidth="130.3334757486979" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.3333740234375" minWidth="10.0" prefWidth="119.66652425130206" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="47.6666259765625" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="38.666666666666664" minHeight="10.0" prefHeight="29.666666666666664" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="56.6666259765625" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label fx:id="titleLabel" prefHeight="42.0" prefWidth="470.0" text="Title">
+                                    <font>
+                                        <Font name="Calibri Bold" size="24.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="-30.0" />
+                                    </padding>
+                                </Label>
+                                <Label fx:id="typeLabel" alignment="TOP_LEFT" prefHeight="41.0" prefWidth="228.0" text="Type" GridPane.rowIndex="1">
+                                    <font>
+                                        <Font name="Calibri Light" size="19.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="-30.0" />
+                                    </padding>
+                                </Label>
+                                <Button fx:id="viewButton" mnemonicParsing="false" onAction="#onActionView" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color:  #A9D099;" text="View" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                    <font>
+                                        <Font name="Calibri" size="16.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                <Button fx:id="editButton" mnemonicParsing="false" onAction="#onActionEdit" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color:  #A5D6F7;" text="Edit" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                    <font>
+                                        <Font name="Calibri" size="16.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                <Label fx:id="priceLabel" alignment="TOP_LEFT" prefHeight="38.0" prefWidth="228.0" text="Price" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font name="Calibri Light" size="19.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets left="-30.0" />
+                                    </padding>
+                                </Label>
+                                <Button fx:id="binButton" mnemonicParsing="false" onAction="#onActionBin" prefHeight="49.0" prefWidth="53.0" style="-fx-background-color: transparent;" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+                                    <font>
+                                        <Font name="Calibri" size="16.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <graphic>
+                                        <ImageView fitHeight="59.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/bin.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <GridPane.margin>
+                                        <Insets right="10.0" />
+                                    </GridPane.margin>
+                                </Button>
+                            </children>
+                        </GridPane>
+                    </children>
+                </GridPane>
+            </children>
+        </VBox>
+    </graphic>
+</fx:root>
